@@ -2,7 +2,7 @@ lst = []
 for i in range(1, 1001):
     if i % 2 != 0:
         lst.append(i ** 3)
-print(lst)
+# print(lst)
 
 def sum_of_num(number):
     sum = 0
@@ -22,7 +22,7 @@ lst_new = []
 sum = 0
 for i in lst:
     lst_new.append(i + 17)
-print(lst_new)
+# print(lst_new)
 
 sum = 0
 for i in lst_new:
