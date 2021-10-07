@@ -10,13 +10,17 @@ for i in range(len(arr_prices)):
     print(f'{_a[0]} руб {_a[1]} коп', end=', ')
 print(id(arr_prices))
 
-arr_prices.reverse()
-for i in range(len(arr_prices)):
-    _a = format(arr_prices[i], '.2f').split('.')
+from copy import copy
+arr_prices_new = copy(arr_prices)
+arr_prices_new.reverse()
+for i in range(len(arr_prices_new)):
+    _a = format(arr_prices_new[i], '.2f').split('.')
     print(f'{_a[0]} руб {_a[1]} коп', end=', ')
-print(id(arr_prices))
+print(id(arr_prices_new))
 
-arr_prices.reverse()
 for i in range(len(arr_prices) - 5, len(arr_prices)):
     _a = format(arr_prices[i], '.2f').split('.')
     print(f'{_a[0]} руб {_a[1]} коп', end=', ')
+
+# не совсем понял поставленную задачу, поэтому второй вариант - из начального списка без форматирования:
+print(sorted(arr_prices)[-5:])
