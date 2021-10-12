@@ -22,7 +22,7 @@
 
 
 def num_translate(word):
-    """Фунция переводит числительные от 0 до 10 c английского на русский язык, например "one" >>> "один" """
+    """Фунция переводит числительные от 0 до 10 c английского на русский язык, например "one" =>> "один" """
     glossary = {
         'one': 'один',
         'two': 'два',
@@ -42,4 +42,4 @@ def num_translate(word):
         return None
 
 
-print(num_translate('four'))
+print(num_translate('five'))
